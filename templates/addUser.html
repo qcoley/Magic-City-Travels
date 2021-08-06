@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link href="{{ url_for('static', filename='stylesheets/style.css') }}" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="app.js"></script>
+
+  <script>
+      function openNav() {
+          document.getElementById("slidemenu").style.width = "300px";
+      }
+
+      function closeNav() {
+          document.getElementById("slidemenu").style.width = "0";
+      }
+  </script>
+
+  <nav id="slidemenu" class="sidenav">
+  <a herf="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="{{ url_for('index') }}">Home</a>
+  <a href="{{ url_for('food_favs') }}">Food Favs</a>
+  <a href="{{ url_for('baranddrinks') }}">Bar & Drinks</a>
+  <a href="{{ url_for('funandbeyond') }}">Fun and Beyond</a>
+  <a href="{{ url_for('home') }}">Show All</a>
+  </nav>
+
+  <header>
+  <div class="container">
+  <span class="menubutton" onclick="openNav()">&#9776; Menu</span>
+  <h1>My Profile</h1>
+  <br></br>
+  </div>
+  </header>
+
+
+<div class="container-md -primary text-white" style = "background-color:#722F37; border:5px solid black; border-top: none;">
+<center>
+<br></br>
+<br></br>
+
+
+<h2> Enter Your Information </h2>
+
+
+
+<!-- User creation box. Will add to SQL database with selected interest -->
+<div class="p-2"></div>
+<form action="/user" method="post">
+
+ <ul>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name">
+
+    <br></br>
+
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" name="user_email">
+
+    <br></br>
+
+    <label for="interest">What are your interests?:</label>
+    <select name="interests" id="interest">
+    <option value="Exhibits">Exhibits</option>
+    <option value="Shops">Shops</option>
+    <option value="Drinks">Drinks</option>
+    <option value="Foods">Foods</option>
+    </select>
+
+    <br></br> <br></br>
+
+    <input type = "submit" value = "Create your profile" class = "btn btn-secondary">
+
+ </ul>
+
+</form>
+
+
+<br></br>
+<br></br>
+</div>
+
+<footer>
+<div class="container-sm">
+<div class="left">
+<div class="contact">
+  <h5>Contact Us</h5>
+  <p>Magic City Travels</p>
+  <p>634 Blankenship Ave.</p>
+  <p>Birmingham, AL 35049</p>
+</div>
+</div>
+
+<div class="sitemap">
+<h5>Sitemap</h5>
+<ul>
+<div class="left">
+  <li><a href="{{ url_for('index') }}" style="color:white">Home</a></li>
+  <li><a href="#" style="color:white">About Us</a></li>
+  <li><a href="#" style="color:white">Privacy</a></li>
+</div>
+<div class="right">
+  <li><a href="#" style="color:white">Support</a></li>
+  <li><a href="#" style="color:white">FAQ</a></li>
+  <li><a href="#" style="color:white">Careers</a></li>
+</div>
+</ul>
+</div>
+</div>
+</footer>
+
+
+</body>
+</html>

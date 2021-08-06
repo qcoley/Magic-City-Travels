@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Welcome to Magic City Travels</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link href="{{ url_for('static', filename='stylesheets/style.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='stylesheets/visits.css') }}" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <nav id="slidemenu" class="sidenav">
+  <a herf="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="{{ url_for('index') }}">Home</a>
+  <a href="{{ url_for('food_favs') }}">Food Favs</a>
+  <a href="{{ url_for('baranddrinks') }}">Bar & Drinks</a>
+  <a href="{{ url_for('funandbeyond') }}">Fun and Beyond</a>
+  <a href="{{ url_for('show') }}">Show All</a>
+  </nav>
+
+    <header>
+    <div class="container -sm -primary text-black">
+    <span class="menubutton" onclick="openNav()">&#9776; Menu</span>
+
+    <div class="d-flex flex-row">
+    <h1>Magic City Travels</h1>
+
+    <!-- Spacing ..........................................................-->
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+    <div class="p-2"></div> <div class="p-2"></div>
+
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+    <div class="p-2"></div> <div class="p-2"></div>
+
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+    <div class="p-2"></div> <div class="p-2"></div>
+
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+    <div class="p-2"></div> <div class="p-2"></div>
+
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+    <div class="p-2"></div> <div class="p-2"></div>
+
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+    <div class="p-2"></div> <div class="p-2"></div>
+    <!-- ....................................................................-->
+
+
+    <h4> New Users </h4>
+    <div class="p-2"></div>
+
+    <form action = "/" method = "post">
+    <input type = "text" placeholder = "name" name = "new_name">
+    <input type = "submit" value = "Sign Up" class = "btn btn-secondary">
+    </form>
+
+    <!-- Spacing -->
+    <div class="p-2"></div> <div class="p-2"></div> <div class="p-2"></div>
+
+    <h4> Returning </h4>
+    <div class="p-2"></div>
+
+    <form action = "/" method = "post">
+    <input type = "text" placeholder = "name" name = "returning_name">
+    <input type = "submit" value = "Sign In" class = "btn btn-secondary">
+    </form>
+    </div>
+    </div>
+    <br></br>
+
+    </header>
+
+
+
+    <!-- website content example pictures -->
+    <div class="container-sm -primary text-white">
+    <table class="table">
+    <tr>
+    <td>
+    <div class="f6">
+
+    <br></br>
+    <h3>Perry's Steakhouse</h3>
+    <img class="dining" width="1000" height="545" src="{{ url_for('static', filename='pics/Perryssteakhouse.jpg') }}">
+    <br></br>
+
+    </div>
+    </td>
+    </tr>
+
+
+    <tr>
+    <td>
+    <div class="f3">
+
+    <br></br>
+    <h3>Birmingham Brewing Company</h3>
+    <img class="brew" width="1000" height="545" src="{{ url_for('static', filename='pics/Brewing-Feature.jpg') }}">
+    <br></br>
+
+    </div>
+    </td>
+    </tr>
+
+
+    <tr>
+    <td>
+    <div class="f2">
+
+    <br></br>
+    <h3>Alabama Adventure</h3>
+    <img class="fun" width="1000" height="545" src="{{ url_for('static', filename='pics/alabama_adventure.jpg') }}">
+    <br></br>
+
+    </div>
+    </td>
+    </tr>
+
+
+    <tr>
+    <td>
+    <div class="f8">
+
+    <br></br>
+    <h3>Vulcan</h3>
+    <img class="travel" width="1000" height="800" src="{{ url_for('static', filename='pics/vulcan.jpg') }}">
+    <br></br>
+
+
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+    </div>
+    </td>
+    </tr>
+    </table>
+    </div>
+
+    <main>
+    </main>
+
+
+    <footer>
+    <div class="container-sm">
+    <div class="left">
+    <div class="contact">
+    <h5>Contact Us</h5>
+    <p>Magic City Travels</p>
+    <p>634 Blankenship Ave.</p>
+    <p>Birmingham, AL 35049</p>
+    </div>
+    </div>
+
+    <div class="sitemap">
+    <h5>Sitemap</h5>
+    <ul>
+
+    <div class="left">
+    <li><a href="{{ url_for('index') }}" style="color:white">Home</a></li>
+    <li><a href="#" style="color:white">About Us</a></li>
+    <li><a href="#" style="color:white">Privacy</a></li>
+    </div>
+
+    <div class="right">
+    <li><a href="#" style="color:white">Support</a></li>
+    <li><a href="#" style="color:white">FAQ</a></li>
+    <li><a href="#" style="color:white">Careers</a></li>
+    </div>
+
+    </ul>
+    </div>
+    </div>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="app.js"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("slidemenu").style.width = "300px";
+        }
+
+        function closeNav() {
+            document.getElementById("slidemenu").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>

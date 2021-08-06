@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link href="{{ url_for('static', filename='stylesheets/style.css') }}" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+.button {
+  background-color: gray; border: none;
+  color: white; padding: 14px;
+  text-align: center; text-decoration: none;
+  display: inline-block;
+  font-size: 16px; margin: 4px 1px;
+  cursor: pointer; }
+
+
+a:link, a:visited { color: white;}
+
+
+a:hover, a:active {
+  background-color: #722f37; }
+.button1 {border-radius: 14px;}  .button2 {border-radius: 14px;}
+.button3 {border-radius: 14px;}  .button4 {border-radius: 14px;}
+.button5 {border-radius: 14px;}  .button6 {border-radius: 14px;}
+.button7 {border-radius: 14px;}  .button8 {border-radius: 14px;}
+.button9 {border-radius: 14px;}  .button10 {border-radius: 14px;}
+.button11 {border-radius: 14px;} .button12 {border-radius: 14px;}
+.button13 {border-radius: 14px;} .button14 {border-radius: 14px;}
+.button15 {border-radius: 14px;} .button16 {border-radius: 14px;}
+.button17 {border-radius: 14px;} .button18 {border-radius: 14px;}
+.button19 {border-radius: 14px;} .button20 {border-radius: 14px;}
+.button21 {border-radius: 14px;} .button22 {border-radius: 14px;}
+.button23 {border-radius: 14px;} .button24 {border-radius: 14px;}
+.button25 {border-radius: 14px;} .button26 {border-radius: 14px;}
+.button27 {border-radius: 14px;} .button28 {border-radius: 14px;}
+.button29 {border-radius: 14px;} .button30 {border-radius: 14px;}
+.button31 {border-radius: 14px;} .button32 {border-radius: 14px;}
+.button33 {border-radius: 14px;} .button34 {border-radius: 14px;}
+.button35 {border-radius: 14px;} .button36 {border-radius: 14px;}
+.button37 {border-radius: 14px;} .button38 {border-radius: 14px;}
+.button39 {border-radius: 14px;} .button40 {border-radius: 14px;}
+.button41 {border-radius: 14px;} .button42 {border-radius: 14px;}
+.button43 {border-radius: 14px;} .button44 {border-radius: 14px;}
+.button45 {border-radius: 14px;} .button46 {border-radius: 14px;}
+.button47 {border-radius: 14px;} .button48 {border-radius: 14px;}
+.button49 {border-radius: 14px;} .button50 {border-radius: 14px;}
+.button51 {border-radius: 14px;} .button52 {border-radius: 14px;}
+.button53 {border-radius: 14px;} .button54 {border-radius: 14px;}
+.button55 {border-radius: 14px;} .button56 {border-radius: 14px;}
+.button57 {border-radius: 14px;} .button58 {border-radius: 14px;}
+.button59 {border-radius: 14px;} .button60 {border-radius: 14px;}
+.button61 {border-radius: 14px;} .button62 {border-radius: 14px;}
+.button63 {border-radius: 14px;} .button64 {border-radius: 14px;}
+.button65 {border-radius: 14px;} .button66 {border-radius: 14px;}
+.button67 {border-radius: 14px;} .button68 {border-radius: 14px;}
+.button69 {border-radius: 14px;} .button70 {border-radius: 14px;}
+
+</style>
+</head>
+
+<body>
+
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="app.js"></script>
+
+  <script>
+      function openNav() {
+          document.getElementById("slidemenu").style.width = "300px";
+      }
+
+      function closeNav() {
+          document.getElementById("slidemenu").style.width = "0";
+      }
+  </script>
+
+  <nav id="slidemenu" class="sidenav">
+  <a herf="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="{{ url_for('index') }}">Home</a>
+  <a href="{{ url_for('food_favs') }}">Food Favs</a>
+  <a href="{{ url_for('baranddrinks') }}">Bar & Drinks</a>
+  <a href="{{ url_for('funandbeyond') }}">Fun and Beyond</a>
+  <a href="{{ url_for('home') }}">Show All</a>
+  </nav>
+
+  <header>
+  <div class="container">
+  <span class="menubutton" onclick="openNav()">&#9776; Menu</span>
+  <h1>My Profile</h1>
+  <br></br>
+  </div>
+  </header>
+
+
+  <div class="container-sm -primary text-black" style = "background-color: white; border:5px solid black; border-top: none;">
+
+  <center>
+
+  <br></br>
+  <h2> Welcome Back {{user[0]}} !</h2>
+
+
+  <!-- ..................................................................... -->
+  {% if user[1] == "Foods" %}
+
+  <br></br><br></br>
+
+  <h4>My Food Favs</h4> <br></br>
+
+  <button class="button button1"><a href="https://5pointpublichouse.com/">5 Point Public House</a></button>
+  <button class="button button2"><a href="https://alsdeliandgrill.net/index.html">Al’s Deli & Grill</a></button>
+  <button class="button button3"><a href="https://www.alabamabiscuit.com/">Alabama Biscuit Co.</a></button>
+  <button class="button button4"><a href="https://www.eatampersandwich.com/">Ampersandwich</a></button>
+  <button class="button button5"><a href="https://www.automaticseafood.com/">Automatic Seafood & Oysters</a></button>
+  <button class="button button6"><a href="https://www.avinebham.com/">Avine</a></button>
+  <button class="button button7"><a href="https://avondalecommonhouse.com/">Avondale Common House & Distillery </a></button>
+  <button class="button button8"><a href="https://www.bambooon2nd.com/">Bamboo on 2nd</a></button>
+  <button class="button button9"><a href="https://www.banditbham.com/">Bandit Patisserie</a></button>
+  <button class="button button10"><a href="https://www.bettolabham.com/">Bettola</a></button>
+  <button class="button button11"><a href="https://birminghambreadworks.com/">Birmingham Breakworks</a></button>
+  <button class="button button12"><a href="https://www.bistro218.com/">Bistro 218</a></button>
+  <button class="button button13"><a href="https://www.blackpearlhomewood.com/">Black Pearl </a></button>
+  <button class="button button14"><a href="https://www.blacksheep-kitchen.net/">Black Sheep Kitchen</a></button>
+  <button class="button button15"><a href="https://www.blueprinton3rd.com/">Blueprint on 3rd</a></button>
+  <button class="button button16"><a href="https://boccabirmingham.com/">Bocca Ristorante</a></button>
+  <button class="button button17"><a href="https://www.boguesdiner.com/">Bogue’s Restaurant</a></button>
+  <button class="button button18"><a href="https://www.bongiornoitalianrestaurant.com/">Bongiorno</a></button>
+  <button class="button button19"><a href="https://bottegarestaurant.com/">Bottega</a></button>
+  <button class="button button20"><a href="https://www.carriganspub.com/">Carrigan Public House</a></button>
+  <button class="button button21"><a href="https://cayococorumbar.com/">Cayo Coco Rum Bar & Restaurant </a></button>
+  <button class="button button22"><a href="https://www.fonfonbham.com/">Chez Fonfon</a></button>
+  <button class="button button23"><a href="https://www.chriszs.com/">Chris Z’s</a></button>
+  <button class="button button24"><a href="https://www.chezlulu.us/">Continental Bakery</a></button>
+  <button class="button button25"><a href="https://cookiefix.com/">Cookie Fix</a></button>
+  <button class="button button26"><a href="https://craftsbhm.com/">Craft’s on Church Street</a></button>
+  <button class="button button27"><a href="https://www.crestlinebagel.com/">Crestline Bagel Co.</a></button>
+  <button class="button button28"><a href="https://www.davenportspizza.com/">Davenport’s Pizza Palace</a></button>
+  <button class="button button29"><a href="https://dreamlandbbq.com/">Dreamland BBQ</a></button>
+  <button class="button button30"><a href="https://davesontheweb.com/">Dave’s Pizza</a></button>
+  <button class="button button31"><a href="https://devincispizza.com/">De Vinci’s Pizza & Italian Restaurant</a></button>
+  <button class="button button32"><a href="https://www.eastwestbirmingham.com/">EastWest Kitchen & Bar</a></button>
+  <button class="button button33"><a href="https://www.elbarriobirmingham.com/">El Barrio Restaurant Y Bar</a></button>
+  <button class="button button34"><a href="http://www.eugeneshotchicken.com/">Eugene’s Hot Chicken</a></button>
+  <button class="button button35"><a href="https://www.gianmarcosbhm.com/">GianMarco’s</a></button>
+  <button class="button button36"><a href="https://www.helenbham.com/">Helen</a></button>
+  <button class="button button37"><a href="https://www.herodoughnutsandbuns.com/">Hero Doughnuts</a></button>
+  <button class="button button38"><a href="https://highlandsbarandgrill.com/">Highlands Bar & Grill</a></button>
+  <button class="button button39"><a href="https://www.hotandhotfishclub.com/"> Hot & Hot Fish Club</a></button>
+  <button class="button button40"><a href="https://www.irondalecafe.com/">Irondale Café</a></button>
+  <button class="button button41"><a href="https://www.jinseisushi.com/">Jinsei Sushi</a></button>
+  <button class="button button42"><a href="https://www.johnnyshomewood.com/">Johnny’s Restaurant</a></button>
+  <button class="button button43"><a href="http://www.thelittledonkey.com/">Little Donkey</a></button>
+  <button class="button button44"><a href="https://www.grubhub.com/restaurant/magic-city-grille-2201-3rd-avenue-north-birmingham/1564821">Magic City Grille</a></button>
+  <button class="button button45"><a href="https://www.mcflysbs.com/">McFly’s Bird Shoppe</a></button>
+  <button class="button button46"><a href="https://www.michaelssteakandseafood.com/">Michael’s Restaurant</a></button>
+  <button class="button button47"><a href="http://www.nabeels.com/">Nabeel’s Café</a></button>
+  <button class="button button48"><a href="http://www.nikiswest.com/">Niki’s West</a></button>
+  <button class="button button49"><a href="https://www.ollieirene.com/">Ollie Irene</a></button>
+  <button class="button button50"><a href="http://www.oceanbirmingham.com/">Ocean</a></button>
+  <button class="button button51"><a href="http://www.paramountbirmingham.com/">Paramount</a></button>
+  <button class="button button52"><a href="http://thepitastop.com/index.html">Pita Stop</a></button>
+  <button class="button button53"><a href="http://www.popsneighborhoodgrill.com/">Pop’s Neighborhood Grill</a></button>
+  <button class="button button54"><a href="https://postofficepies.com/">Post Office Pies</a></button>
+  <button class="button button55"><a href="https://www.rojobirmingham.com/">Rojo</a></button>
+  <button class="button button56"><a href="https://www.roots-revelry.com/">Roots & Revelry</a></button>
+  <button class="button button57"><a href="http://www.salemsdiner.com/">Salem’s Diner</a></button>
+  <button class="button button58"><a href="https://www.sawsbbq.com/">SAW’s Soul Kitchen</a></button>
+  <button class="button button59"><a href="https://shushopbham.com/">Shu Shop</a></button>
+  <button class="button button60"><a href="https://steelcitypops.com/?v=7516fd43adaa">Steel City Pops</a></button>
+  <button class="button button61"><a href="http://surinofthailand.com/locations/surin-west/">Surin West</a></button>
+  <button class="button button62"><a href="https://www.tajindia.net/">Taj India</a></button>
+  <button class="button button63"><a href="https://tedsbirmingham.com/">Ted’s Restaurant</a></button>
+  <button class="button button64"><a href="https://www.birminghamcandycompany.com/">The Birmingham Candy Co.</a></button>
+  <button class="button button65"><a href="https://essentialbham.com/">The Essential</a></button>
+  <button class="button button66"><a href="http://www.thefishmarket.net/">The Fish Market on Southside</a></button>
+  <button class="button button67"><a href="https://ironcitybham.com/the-grill/">The Grill at Iron City</a></button>
+  <br></br><br></br>
+  <br></br><br></br>
+
+  {% endif %}
+
+  <!-- ..................................................................... -->
+
+
+  {% if user[1] == "Exhibits" %}
+
+  <br></br><br></br>
+
+  <h4>My Exhibits</h4> <br></br>
+
+  <button class="button button1"><a href="https://www.artsbma.org/">Birmingham Museum of Art</a></button>
+  <button class="button button2"><a href="https://www.bbgardens.org/">Birmingham Botanical Gardens</a></button>
+  <button class="button button3"><a href="https://www.bcri.org/">Birmingham Civil Rights Institute</a></button>
+  <button class="button button4"><a href="https://www.birminghamzoo.com/">Birmingham Zoo</a></button>
+  <button class="button button5"><a href="https://birmingham.lockedin.com/">Locked In: The Birmingham Escape Game</a></button>
+  <button class="button button6"><a href="https://www.mcwane.org/">McWane Science Center</a></button>
+  <button class="button button7"><a href="https://railroadpark.org/index.php">Railroad Park</a></button>
+  <button class="button button8"><a href="https://www.milb.com/birmingham/ballpark/regions-field">Regions Field</a></button>
+  <button class="button button9"><a href="https://redmountainpark.org/">Red Mountain Park</a></button>
+  <button class="button button10"><a href="http://www.birminghamrotary.org/service/club-service/rotary-trail/">Rotary Trail Birmingham</a></button>
+  <button class="button button11"><a href="https://www.slossfurnaces.com/">Sloss Furnaces</a></button>
+  <button class="button button12"><a href="https://visitvulcan.com/">Vulcan Park & Museum</a></button>
+
+  <br></br><br></br>
+  <br></br><br></br>
+
+  {% endif %}
+  <!-- ..................................................................... -->
+
+  <!-- ..................................................................... -->
+
+
+  {% if user[1] == "Shops" %}
+
+  <br></br><br></br>
+
+  <h4>My Shopping</h4> <br></br>
+
+  <button class="button button1"><a href="https://abasicshop.com/">basic.</a></button>
+  <button class="button button2"><a href="https://www.facebook.com/birminghamoddities">Birmingham Oddities</a></button>
+  <button class="button button3"><a href="https://bizarre-the-coffee-bar.business.site/">Bizarre the Coffee Bar</a></button>
+  <button class="button button5"><a href="https://caveatcoffee.com/">Caveat Coffee</a></button>
+  <button class="button button6"><a href="https://churchstreetshop.com/">Church Street Coffee & Books</a></button>
+  <button class="button button7"><a href="https://www.filtercoffeeparlor.com/">Filter Coffee Parlor</a></button>
+  <button class="button button8"><a href="http://goldentemplehealthfoods.com/">Golden Temple</a></button>
+  <button class="button button9"><a href="https://www.jimreedbooks.com/">Jim Reed Books</a></button>
+  <button class="button button10"><a href="https://theredcatcoffeehouse.com/">Red Cat Coffee House</a></button>
+  <button class="button button11"><a href="https://www.facebook.com/RenaissancerecordsBham">Renaissance Records Inc.</a></button>
+  <button class="button button12"><a href="https://www.facebook.com/whatsonsecondbirmingham">What’s on 2nd</a></button>
+  <button class="button button13"><a href="http://yellowhammer.org/">Yellowhammer Creative Print Shop </a></button>
+
+
+  <br></br><br></br>
+  <br></br><br></br>
+
+  {% endif %}
+  <!-- ..................................................................... -->
+
+  <!-- ..................................................................... -->
+
+
+  {% if user[1] == "Drinks" %}
+
+  <br></br><br></br>
+
+  <h4>My Drinks</h4> <br></br>
+
+  <button class="button button1"><a href="https://avondalebrewing.com/">Avondale Brewing Co.</a></button>
+  <button class="button button2"><a href="https://www.backfortybeer.com/birmingham">Back Forty Beer & Co.</a></button>
+  <button class="button button3"><a href="https://www.birminghamdistrictbrewing.com/">Birmingham District Brewing Co.</a></button>
+  <button class="button button4"><a href="https://www.dreadriver.com/">Dread River Distilling Co.</a></button>
+  <button class="button button5"><a href="https://www.freddyswinebar.com/">Freddy’s Wine Bar</a></button>
+  <button class="button button6"><a href="http://www.ghosttrainbrewing.com/">Ghost Train Brewing Co.</a></button>
+  <button class="button button7"><a href="http://pm.martysbham.com/contact/">Marty’s PM</a></button>
+  <button class="button button8"><a href="https://www.momsbham.com/">Mom’s Basement</a></button>
+  <button class="button button9"><a href="http://moonshinebirmingham.com/">Moon Shine</a></button>
+  <button class="button button10"><a href="http://www.neonmoonbham.com/">Neon Moon</a></button>
+  <button class="button button11"><a href="https://www.pilcrowbham.com/">Pilcrow Cocktail Cellar</a></button>
+  <button class="button button12"><a href="https://www.queensparkbham.com/">Queen’s Park</a></button>
+  <button class="button button13"><a href="http://places.singleplatform.com/the-collins-bar/menu?ref=google">The Collins Bar</a></button>
+  <button class="button button14"><a href="http://garagecafe.us/">The Garage Café</a></button>
+  <button class="button button15"><a href="https://www.thenickrocks.com/">The Nick</a></button>
+  <button class="button button16"><a href="http://www.redmontbirmingham.com/the-roof/">The Roof</a></button>
+  <button class="button button17"><a href="https://wineloftbham.com/">The Wine Loft</a></button>
+  <button class="button button18"><a href="https://www.tinroofbirmingham.com/">Tin Roof</a></button>
+  <button class="button button19"><a href="https://www.trimtabbrewing.com/">TrimTab Brewing Co.</a></button>
+  <button class="button button20"><a href="https://www.barunplugged.com/">Unplugged</a></button>
+  <button class="button button21"><a href="http://theupsidedownplaza.com/">Upside Down Plaza</a></button>
+
+
+  <br></br><br></br>
+  <br></br><br></br>
+
+  {% endif %}
+  <!-- ..................................................................... -->
+
+
+  <br></br>
+  <br></br>
+
+  </center>
+  </div>
+
+
+  <footer>
+  <div class="container-sm">
+  <div class="left">
+  <div class="contact">
+    <h5>Contact Us</h5>
+    <p>Magic City Travels</p>
+    <p>634 Blankenship Ave.</p>
+    <p>Birmingham, AL 35049</p>
+  </div>
+  </div>
+
+  <div class="sitemap">
+  <h5>Sitemap</h5>
+  <ul>
+  <div class="left">
+    <li><a href="{{ url_for('index') }}" style="color:white">Home</a></li>
+    <li><a href="#" style="color:white">About Us</a></li>
+    <li><a href="#" style="color:white">Privacy</a></li>
+  </div>
+  <div class="right">
+    <li><a href="#" style="color:white">Support</a></li>
+    <li><a href="#" style="color:white">FAQ</a></li>
+    <li><a href="#" style="color:white">Careers</a></li>
+  </div>
+  </ul>
+  </div>
+  </div>
+  </footer>
+
+
+
+</body>
+</html>

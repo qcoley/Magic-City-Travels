@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Welcome to Magic City Travels</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link href="{{ url_for('static', filename='stylesheets/style.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='stylesheets/visits.css') }}" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+  <nav id="slidemenu" class="sidenav">
+  <a herf="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="{{ url_for('index') }}">Home</a>
+  <a href="{{ url_for('food_favs') }}">Food Favs</a>
+  <a href="{{ url_for('baranddrinks') }}">Bar & Drinks</a>
+  <a href="{{ url_for('funandbeyond') }}">Fun and Beyond</a>
+  <a href="{{ url_for('home') }}">Show All</a>
+  </nav>
+
+  <header>
+  <div class="container">
+  <span class="menubutton" onclick="openNav()">&#9776; Menu</span>
+  <h1>Magic City Travels</h1>
+  <br></br>
+  </div>
+  </header>
+
+
+  <h2>Food Favorites</h2>
+  <br></br>
+  <div class = "container -sm">
+
+
+  <table class="table">
+  <tr>
+  <td>
+  <div class="f6">
+  <img class="f61" width="650" height="480" src="{{ url_for('static', filename='pics/food6.jpg') }}">
+  </div>
+  </td>
+  <td>
+  <div class="f5">
+  <img class="f51" width="650" height="480" src="{{ url_for('static', filename='pics/food5.jpg') }}">
+  </div>
+  </td>
+  </tr>
+
+
+  <tr>
+  <td>
+  <div class="f3">
+  <img class="f31" width="650" height="480" src="{{ url_for('static', filename='pics/food3.jpg') }}">
+  </div>
+  </td>
+  <td>
+  <div class="f1">
+  <img class="f11" width="650" height="480" src="{{ url_for('static', filename='pics/food1.jpg') }}">
+  </div>
+  </td>
+  </tr>
+
+
+  <tr>
+  <td>
+  <div class="f2">
+  <img class="f21" width="650" height="480" src="{{ url_for('static', filename='pics/food2.jpg') }}">
+  </div>
+  </td>
+  <td>
+  <div class="f4">
+  <img class="f41" width="650" height="480" src="{{ url_for('static', filename='pics/food4.jpg') }}">
+  </div>
+  </td>
+  </tr>
+
+
+  <tr>
+  <td>
+  <div class="f8">
+  <img class="f81" width="650" height="480" src="{{ url_for('static', filename='pics/food8.jpg') }}">
+  </div>
+  </td>
+  <td>
+  <div class="f7">
+  <img class="f71" width="650" height="480" src="{{ url_for('static', filename='pics/food7.jpg') }}">
+  </div>
+  </td>
+  </tr>
+
+  </table>
+  </div>
+
+
+
+
+
+<main>
+
+<div class="choices">
+
+<button class="button button1"><a href="https://5pointpublichouse.com/" style="color:white">5 Point Public House</a></button>
+<button class="button button2"><a href="https://alsdeliandgrill.net/index.html" style="color:white">Al's Deli & Grill</a></button>
+<button class="button button3"><a href="https://www.alabamabiscuit.com/" style="color:white">Alabama Biscuit Co.</a></button>
+<button class="button button4"><a href="https://www.eatampersandwich.com/" style="color:white">Ampersandwich</a></button>
+<button class="button button5"><a href="https://www.automaticseafood.com/" style="color:white">Automatic Seafood & Oysters</a></button>
+<button class="button button6"><a href="https://www.avinebham.com/" style="color:white">Avine</a></button>
+<button class="button button7"><a href="https://avondalecommonhouse.com/" style="color:white">Avondale Common House & Distillery </a></button>
+<button class="button button8"><a href="https://www.bambooon2nd.com/" style="color:white">Bamboo on 2nd</a></button>
+<button class="button button9"><a href="https://www.banditbham.com/" style="color:white">Bandit Patisserie</a></button>
+<button class="button button10"><a href="https://www.bettolabham.com/" style="color:white">Bettola</a></button>
+<button class="button button11"><a href="https://birminghambreadworks.com/" style="color:white">Birmingham Breakworks</a></button>
+<button class="button button12"><a href="https://www.bistro218.com/" style="color:white">Bistro 218</a></button>
+<button class="button button13"><a href="https://www.blackpearlhomewood.com/" style="color:white">Black Pearl </a></button>
+<button class="button button14"><a href="https://www.blacksheep-kitchen.net/" style="color:white">Black Sheep Kitchen</a></button>
+<button class="button button15"><a href="https://www.blueprinton3rd.com/" style="color:white">Blueprint on 3rd</a></button>
+<button class="button button16"><a href="https://boccabirmingham.com/" style="color:white">Bocca Ristorante</a></button>
+<button class="button button17"><a href="https://www.boguesdiner.com/" style="color:white">Bogue's Restaurant</a></button>
+<button class="button button18"><a href="https://www.bongiornoitalianrestaurant.com/" style="color:white">Bongiorno</a></button>
+<button class="button button19"><a href="https://bottegarestaurant.com/" style="color:white">Bottega</a></button>
+<button class="button button20"><a href="https://www.carriganspub.com/" style="color:white">Carrigan Public House</a></button>
+<button class="button button21"><a href="https://cayococorumbar.com/" style="color:white">Cayo Coco Rum Bar & Restaurant </a></button>
+<button class="button button22"><a href="https://www.fonfonbham.com/" style="color:white">Chez Fonfon</a></button>
+<button class="button button23"><a href="https://www.chriszs.com/" style="color:white">Chris Z's</a></button>
+<button class="button button24"><a href="https://www.chezlulu.us/" style="color:white">Continental Bakery</a></button>
+<button class="button button25"><a href="https://cookiefix.com/" style="color:white">Cookie Fix</a></button>
+<button class="button button26"><a href="https://craftsbhm.com/" style="color:white">Craft's on Church Street</a></button>
+<button class="button button27"><a href="https://www.crestlinebagel.com/" style="color:white">Crestline Bagel Co.</a></button>
+<button class="button button28"><a href="https://www.davenportspizza.com/" style="color:white">Davenport's Pizza Palace</a></button>
+<button class="button button29"><a href="https://dreamlandbbq.com/" style="color:white">Dreamland BBQ</a></button>
+<button class="button button30"><a href="https://davesontheweb.com/" style="color:white">Dave's Pizza</a></button>
+<button class="button button31"><a href="https://devincispizza.com/" style="color:white">De Vinci's Pizza & Italian Restaurant</a></button>
+<button class="button button32"><a href="https://www.eastwestbirmingham.com/" style="color:white">EastWest Kitchen & Bar</a></button>
+<button class="button button33"><a href="https://www.elbarriobirmingham.com/" style="color:white">El Barrio Restaurant Y Bar</a></button>
+<button class="button button34"><a href="http://www.eugeneshotchicken.com/" style="color:white">Eugene's Hot Chicken</a></button>
+<button class="button button35"><a href="https://www.gianmarcosbhm.com/" style="color:white">GianMarco's</a></button>
+<button class="button button36"><a href="https://www.helenbham.com/" style="color:white">Helen</a></button>
+<button class="button button37"><a href="https://www.herodoughnutsandbuns.com/" style="color:white">Hero Doughnuts</a></button>
+<button class="button button38"><a href="https://highlandsbarandgrill.com/" style="color:white">Highlands Bar & Grill</a></button>
+<button class="button button39"><a href="https://www.hotandhotfishclub.com/" style="color:white"> Hot & Hot Fish Club</a></button>
+<button class="button button40"><a href="https://www.irondalecafe.com/" style="color:white">Irondale Cafe</a></button>
+<button class="button button41"><a href="https://www.jinseisushi.com/" style="color:white">Jinsei Sushi</a></button>
+<button class="button button42"><a href="https://www.johnnyshomewood.com/" style="color:white">Johnny's Restaurant</a></button>
+<button class="button button43"><a href="http://www.thelittledonkey.com/" style="color:white">Little Donkey</a></button>
+<button class="button button44"><a href="https://www.grubhub.com/restaurant/magic-city-grille-2201-3rd-avenue-north-birmingham/1564821" style="color:white">Magic City Grille</a></button>
+<button class="button button45"><a href="https://www.mcflysbs.com/" style="color:white">McFly's Bird Shoppe</a></button>
+<button class="button button46"><a href="https://www.michaelssteakandseafood.com/" style="color:white">Michael's Restaurant</a></button>
+<button class="button button47"><a href="http://www.nabeels.com/" style="color:white">Nabeel's Cafe</a></button>
+<button class="button button48"><a href="http://www.nikiswest.com/" style="color:white">Niki's West</a></button>
+<button class="button button49"><a href="https://www.ollieirene.com/" style="color:white">Ollie Irene</a></button>
+<button class="button button50"><a href="http://www.oceanbirmingham.com/" style="color:white">Ocean</a></button>
+<button class="button button51"><a href="http://www.paramountbirmingham.com/" style="color:white">Paramount</a></button>
+<button class="button button52"><a href="http://thepitastop.com/index.html" style="color:white">Pita Stop</a></button>
+<button class="button button53"><a href="http://www.popsneighborhoodgrill.com/" style="color:white">Pop's Neighborhood Grill</a></button>
+<button class="button button54"><a href="https://postofficepies.com/" style="color:white">Post Office Pies</a></button>
+<button class="button button55"><a href="https://www.rojobirmingham.com/" style="color:white">Rojo</a></button>
+<button class="button button56"><a href="https://www.roots-revelry.com/" style="color:white">Roots & Revelry</a></button>
+<button class="button button57"><a href="http://www.salemsdiner.com/" style="color:white">Salem's Diner</a></button>
+<button class="button button58"><a href="https://www.sawsbbq.com/" style="color:white">SAW's Soul Kitchen</a></button>
+<button class="button button59"><a href="https://shushopbham.com/" style="color:white">Shu Shop</a></button>
+<button class="button button60"><a href="https://steelcitypops.com/?v=7516fd43adaa" style="color:white">Steel City Pops</a></button>
+<button class="button button61"><a href="http://surinofthailand.com/locations/surin-west/" style="color:white">Surin West</a></button>
+<button class="button button62"><a href="https://www.tajindia.net/" style="color:white">Taj India</a></button>
+<button class="button button63"><a href="https://tedsbirmingham.com/" style="color:white">Ted's Restaurant</a></button>
+<button class="button button64"><a href="https://www.birminghamcandycompany.com/" style="color:white">The Birmingham Candy Co.</a></button>
+<button class="button button65"><a href="https://essentialbham.com/" style="color:white">The Essential</a></button>
+<button class="button button66"><a href="http://www.thefishmarket.net/" style="color:white">The Fish Market on Southside</a></button>
+<button class="button button67"><a href="https://ironcitybham.com/the-grill/" style="color:white">The Grill at Iron City</a></button>
+</div>
+</main>
+
+<footer>
+<div class="container-sm">
+<div class="left">
+<div class="contact">
+  <h5>Contact Us</h5>
+  <p>Magic City Travels</p>
+  <p>634 Blankenship Ave.</p>
+  <p>Birmingham, AL 35049</p>
+</div>
+</div>
+
+<div class="sitemap">
+<h5>Sitemap</h5>
+<ul>
+<div class="left">
+  <li><a href="{{ url_for('index') }}" style="color:white">Home</a></li>
+  <li><a href="#" style="color:white">About Us</a></li>
+  <li><a href="#" style="color:white">Privacy</a></li>
+</div>
+<div class="right">
+  <li><a href="#" style="color:white">Support</a></li>
+  <li><a href="#" style="color:white">FAQ</a></li>
+  <li><a href="#" style="color:white">Careers</a></li>
+</div>
+</ul>
+</div>
+</div>
+</footer>
+
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="app.js"></script>
+
+<script>
+    function openNav() {
+        document.getElementById("slidemenu").style.width = "300px";
+            }
+
+    function closeNav() {
+        document.getElementById("slidemenu").style.width = "0";
+            }
+</script>
+</body>
+</html>

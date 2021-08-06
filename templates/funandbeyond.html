@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Welcome to Magic City Travels</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link href="{{ url_for('static', filename='stylesheets/style.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='stylesheets/visits.css') }}" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+  <nav id="slidemenu" class="sidenav">
+  <a herf="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="{{ url_for('index') }}">Home</a>
+  <a href="{{ url_for('food_favs') }}">Food Favs</a>
+  <a href="{{ url_for('baranddrinks') }}">Bar & Drinks</a>
+  <a href="{{ url_for('funandbeyond') }}">Fun and Beyond</a>
+  <a href="{{ url_for('home') }}">Show All</a>
+  </nav>
+
+  <header>
+  <div class="container">
+  <span class="menubutton" onclick="openNav()">&#9776; Menu</span>
+  <h1>Magic City Travels</h1>
+  <br></br>
+  </div>
+  </header>
+
+
+  <h2>Fun and Beyond</h2>
+  <br></br>
+  <div class = "container -sm">
+
+
+  <table class="table">
+  <tr>
+  <td>
+  <div class="f6">
+  <img class="f61" width="650" height="480" src="{{ url_for('static', filename='pics/fun1.jpg') }}">
+  </div>
+  </td>
+  <td>
+  <div class="f5">
+  <img class="f51" width="650" height="480" src="{{ url_for('static', filename='pics/fun5.jpg') }}">
+  </div>
+  </td>
+  </tr>
+
+
+  <tr>
+  <td>
+  <div class="f3">
+  <img class="f31" width="650" height="480" src="{{ url_for('static', filename='pics/fun3.jpg') }}">
+  </div>
+  </td>
+  <td>
+  <div class="f1">
+  <img class="f11" width="650" height="480" src="{{ url_for('static', filename='pics/fun6.jpg') }}">
+  </div>
+  </td>
+  </tr>
+
+
+  <tr>
+  <td>
+  <div class="f2">
+  <img class="f21" width="650" height="480" src="{{ url_for('static', filename='pics/fun2.jpg') }}">
+  </div>
+  </td>
+  <td>
+  <div class="f4">
+  <img class="f41" width="650" height="480" src="{{ url_for('static', filename='pics/fun4.jpg') }}">
+  </div>
+  </td>
+  </tr>
+
+
+  <tr>
+  <td>
+  <div class="f8">
+  <img class="f81" width="650" height="480" src="{{ url_for('static', filename='pics/fun8.jpg') }}">
+  </div>
+  </td>
+  <td>
+  <div class="f7">
+  <img class="f71" width="650" height="480" src="{{ url_for('static', filename='pics/fun7.jpg') }}">
+  </div>
+  </td>
+  </tr>
+
+  </table>
+  </div>
+
+
+<main>
+
+<div class="choices">
+
+<button class="button button1"><a href="https://alabamaadventure.com/" style="color:white">Alabama Adventure</a></button>
+<button class="button button2"><a href="https://www.birminghamzoo.com/" style="color:white">The Birmingham Zoo</a></button>
+<button class="button button3"><a href="https://www.bbgardens.org/" style="color:white">Botanical Gradens</a></button>
+<button class="button button4"><a href="https://paintballisgood.com/" style="color:white">Paintball Is Good</a></button>
+<button class="button button5"><a href="https://autobahnspeed.com/locations/birmingham-al-indoor-go-karts/" style="color:white">AutoBahn</a></button>
+<button class="button button6"><a href="https://www.bcri.org/" style="color:white">Civil Rights Museum</a></button>
+<button class="button button7"><a href="https://www.artsbma.org/" style="color:white">The Birmingham Museum of Art</a></button>
+<button class="button button8"><a href="https://topgolf.com/us/birmingham/" style="color:white">TopGolf</a></button>
+<button class="button button9"><a href="https://www.bowlero.com/" style="color:white">Bowlero</a></button>
+<button class="button button9"><a href="https://altitudebirmingham.com/" style="color:white">Altitude</a></button>
+
+</main>
+
+<footer>
+<div class="container-sm">
+<div class="left">
+<div class="contact">
+  <h5>Contact Us</h5>
+  <p>Magic City Travels</p>
+  <p>634 Blankenship Ave.</p>
+  <p>Birmingham, AL 35049</p>
+</div>
+</div>
+
+<div class="sitemap">
+<h5>Sitemap</h5>
+<ul>
+<div class="left">
+  <li><a href="{{ url_for('index') }}" style="color:white">Home</a></li>
+  <li><a href="#" style="color:white">About Us</a></li>
+  <li><a href="#" style="color:white">Privacy</a></li>
+</div>
+<div class="right">
+  <li><a href="#" style="color:white">Support</a></li>
+  <li><a href="#" style="color:white">FAQ</a></li>
+  <li><a href="#" style="color:white">Careers</a></li>
+</div>
+</ul>
+</div>
+</div>
+</footer>
+
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="app.js"></script>
+
+<script>
+    function openNav() {
+        document.getElementById("slidemenu").style.width = "300px";
+            }
+
+    function closeNav() {
+        document.getElementById("slidemenu").style.width = "0";
+            }
+</script>
+</body>
+</html>

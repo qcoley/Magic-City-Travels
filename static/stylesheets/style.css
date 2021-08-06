@@ -1,0 +1,242 @@
+body {
+    background: #722f37;
+    font-family: 'Droid Sans', sans-serif;
+    overflow: scroll;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(49, 49, 51);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Optima, sans-serif;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #4e0d01;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+header,
+main,
+footer {
+    min-width: 855px;
+}
+
+header {
+    font-family: 'Century Gothic', 'Lucida', 'Arial';
+    height: auto;
+}
+
+header .menubutton {
+    font-size: 22px;
+
+    cursor: pointer;
+    position: relative;
+    left: 1%;
+    color: rgb(49, 49, 51);
+}
+
+header .container {
+    max-width: 100%;
+}
+
+
+main .container,
+footer .container {
+    max-width: 855px;
+    margin: auto;
+}
+
+header {
+    background: white;
+    overflow: hidden;
+    border-bottom: 5px solid black;
+    width: 100%;
+}
+
+h1 {
+    font-style: bold;
+    font-size: 30px;
+    color: rgb(49, 49, 51);
+    position: relative;
+    left: 30%;
+}
+
+header nav {
+    float: right;
+    width: 450px;
+    font-size: 18px;
+}
+
+main .tour {
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 0 100px;
+}
+
+main .tour .dcontainer {
+    position: relative;
+    width: 1000px;
+    height: 545px;
+}
+
+main .tour .bcontainer {
+    position: relative;
+    width: 1000px;
+    height: 545px;
+}
+
+main .tour .fcontainer {
+    position: relative;
+    width: 1000px;
+    height: 545px;
+}
+
+main .tour .tcontainer {
+    position: relative;
+    width: 1000px;
+    height: 800px;
+    border-radius: 5px;
+}
+
+main .tour .dining:hover {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+main .tour .brew:hover {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+main .tour .fun:hover {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+main .tour .travel:hover {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+main .tour .dtext {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    background-color: transparent;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-family: 'Brush Script MT';
+}
+
+main .tour .btext {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    background-color: transparent;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-family: 'Brush Script MT';
+}
+
+main .tour .ftext {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    background-color: transparent;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-family: 'Brush Script MT';
+}
+
+main .tour .ttext {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    background-color: transparent;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-family: 'Brush Script MT';
+}
+
+footer {
+    font-family: 'Century Gothic', 'Lucida', 'Arial';
+    font-size: 12px;
+    border-top: 5px solid black;
+    padding: 20px 0 10px 0;
+    background: rgb(49, 49, 51);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+h5 {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: white;
+}
+
+
+footer .contact {
+    float: left;
+    width: 500px;
+    color: rgb(255, 255, 255);
+}
+
+footer .sitemap {
+    color: rgb(255, 255, 255);
+    float: right;
+    width: 275px;
+}
+
+footer ul {
+    width: 230px;
+}
+
+li {
+    list-style: none;
+}
+
+footer .sitemap .left {
+    float: left;
+}
+
+footer .sitemap .right {
+    float: right;
+}
