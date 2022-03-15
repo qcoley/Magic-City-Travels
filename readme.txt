@@ -1,4 +1,4 @@
-To Use Our Magic City Travels Web App, please:
+To use the Magic City Travels Web App, please:
 
 1. Open your command prompt (or terminal)
 2. Navigate to the folder (directory) containing the project
